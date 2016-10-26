@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.your.name" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+	<name>GenericApp</name>
+	<description>
+		This is a generic SPA app. Only a static frame is contained inside the app. 
+		All sub-pages are loaded from a server. Server address is configurable.
+		Sub-pages are loaded using a JQuery $.get() call which implement an AJAX call.
+		All necessary parameters are processed before and after the $.get() call.
+	</description>
+	<author email="lucio.zambon@gmail.com" href="http://www.quickline.it">
+		Lucio Zambon
+	</author>
+	<content src="index.html" />
+	<hook type="after_platform_add" src="scripts/install_plugins.js" />
+	<plugin name="cordova-plugin-whitelist" spec="1" />
+	<access origin="http://luciozambon.altervista.org" />
+	<allow-intent href="http://*/*" />
+	<allow-intent href="https://*/*" />
+	<allow-intent href="tel:*" />
+	<allow-intent href="sms:*" />
+	<allow-intent href="mailto:*" />
+	<allow-intent href="geo:*" />
+	<icon src="res/logo.png" />
+	<platform name="android">
+		<allow-intent href="market:*" />
+	</platform>
+	<platform name="ios">
+		<allow-intent href="itms:*" />
+		<allow-intent href="itms-apps:*" />
+	</platform>
+</widget>
