@@ -11,7 +11,7 @@ At startup this is only a proof of concept, all aspects can be improved and any 
 
 The app is a SPA that is an almost empty framework which is fixed. Inside this framework subpages are loaded from a web server according with user interaction.
 
-When a user press a button, a JavaScript callback look for a &lt;form&gt; tag containing this button and all &lt;input&gt; tags in the frame.
+When a user press a button, a JavaScript callback look for a &lt;form&gt; tag containing this button and all &lt;input&gt; tags in the form.
 
 All parameters are sent to the web server using a JQuery $.get() call which implement an AJAX call.
 
