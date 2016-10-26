@@ -5,15 +5,13 @@ In Apache Cordova you can use InAppBrowser and navigate any web site you like. S
 
 But in the InAppBrowser all Apache Cordova plugins are disabled.
 
-GenericApp try to combine any of the features offered by the plugins with the flexibility of putting all the contents on a web server.
+GenericApp aims to combine any of the features offered by the plugins with the flexibility of putting all the contents on a web server.
 
 At startup this is only a proof of concept, all aspects can be improved and any reasonable contribution is welcome. The hope is to produce an industry quality app template.
 
-The app is a SPA that is an almost empty framework which is fixed. Inside this framework subpages are loaded from a web server according with user interaction.
+The app is a SPA that is an almost empty static frame. Inside this frame subpages are loaded from a web server depnding also on user interactions.
 
-When a user press a button, a JavaScript callback look for a &lt;form&gt; tag containing this button and all &lt;input&gt; tags in the form.
-
-All parameters are sent to the web server using a JQuery $.get() call which implement an AJAX call.
+When a user press a button, a JavaScript callback looks for a &lt;form&gt; tag containing this button and all &lt;input&gt; tags in the form. All parameters detected from the &lt;input&gt; tags are sent to the web server using a JQuery $.get() call which implements an AJAX call.
 
 If any input is empty and required then a bootstrap prompt is created.
 
@@ -23,4 +21,4 @@ A button can have a 'confirm' attribute, in this case a confirmation modal is cr
 
 All data are temporarily buffered before the $.get() call and removed on success.
 
-Some input can be configured to be saved permanently on the mobile device.
+Some inputs can be configured to be saved permanently on the mobile device.
