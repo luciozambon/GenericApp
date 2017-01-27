@@ -1,15 +1,15 @@
-# GenericApp
-An Apache Cordova app developed to be as generic as possible
+# ProgressiveHybridApp
+An Apache Cordova app developed to get benefits from both hybrid and progressive web app (PWA)
 
 In Apache Cordova you can use InAppBrowser and navigate any web site you like. So the programmer can change the user experience modifying only the web server part. The user doesn't need to update his/her installation.
 
 But in the InAppBrowser all Apache Cordova plugins are disabled.
 
-GenericApp aims to combine any of the features offered by the plugins with the flexibility of putting all the contents on a web server.
+ProgressiveHybridApp aims to combine any of the features offered by the plugins with the flexibility of putting all the contents on a web server and applying all benefits of PWA.
 
 At startup this is only a proof of concept, all aspects can be improved and any reasonable contribution is welcome. The hope is to produce an industry quality app template.
 
-The app is a SPA that is an almost empty static frame. Inside this frame subpages are loaded from a web server depnding also on user interactions.
+The app is a SPA that is an almost empty static frame. Inside this frame subpages are loaded (and cached) from a web server depnding also on user interactions.
 
 When a user press a button, a JavaScript callback looks for a &lt;form&gt; tag containing this button and all &lt;input&gt; tags in the form. All parameters detected from the &lt;input&gt; tags are sent to the web server using a JQuery $.get() call which implements an AJAX call.
 
