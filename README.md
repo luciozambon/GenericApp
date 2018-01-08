@@ -1,5 +1,5 @@
 # ProgressiveHybridApp
-An Apache Cordova app developed to get benefits from both hybrid and progressive web app (PWA)
+ProgressiveHybridApp is nn Apache Cordova app developed to get benefits from both hybrid and progressive web app (PWA)
 
 In Apache Cordova you can use InAppBrowser and navigate any web site you like. So the programmer can change the user experience modifying only the web server part. The user doesn't need to update his/her installation.
 
